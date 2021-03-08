@@ -21,3 +21,15 @@ function data(input) {
         "47",
         "17"
     ]);
+
+
+/*function fishtank(input) {
+let lenght = Number(input[0]);
+let width = Number(input[1]);
+let height = Number(input[2]);
+let percentJunk = Number(input[3] / 100);
+let fishtankVolume = lenght * width * height;
+let liters = fishtankVolume * 0.001;
+let totalLiters = liters - (liters * percentJunk);
+console.log(totalLiters);
+}*/

@@ -1,0 +1,105 @@
+/*
+font-family: 'Lobster', cursive;
+
+font-family: 'Roboto', sans-serif;
+
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+body {
+    background: linear-gradient(180deg, #FFBA07 1.11%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(210, 34, 34, 0) 0%, rgba(241, 28, 14, 0.92) 71.87%), rgba(234, 53, 14, 0.33);
+    height: 2635px;
+
+}
+
+.fixed-width {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: oldlace;
+}
+
+
+
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    max-width: 70%;
+    padding-top: 15px;
+
+}
+
+.img-div {
+    max-width: inherit;
+
+}
+
+#img-caption {
+    display: block;
+    margin-right: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main-text {
+    max-width: 1000px;
+    align-content: center;
+    margin-top: 40px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 40px;
+
+}
+
+.list {
+    align-items: center;
+    max-width: 50%;
+    display: block;
+    margin-left: 25%;
+}
+
+.list li {
+    list-style: none;
+}
+
+.close {
+    max-width: 1000px;
+    align-content: center;
+    margin-top: 40px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 40px;
+    padding-bottom: 80px;
+}

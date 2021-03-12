@@ -1,0 +1,81 @@
+<!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+User Story #3: I should see a div element with a corresponding id="img-div".
+
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element.  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Патрики Сандев</title>
+</head>
+
+
+<body>
+    <main id="main" class="fixed-width">
+
+
+        <div id="img-div">
+            <img src="http://artgallerystz.com/wp-content/uploads/2015/12/foto.jpg" id="image" alt="Патрики Сандев">
+            <div>
+                <h2 id="img-caption"> Патрики Сандев
+                    <p>1881-1959</p><br>
+                </h2>
+            </div>
+        </div>
+
+
+        <div class="main-text">
+
+            <h3> Биография </h3> <br>
+
+            <p>&nbsp; Патрики Сандев Вълков е живописец, роден на 23.05.1881г в Казанлък, почива на 17.12.1959г. в Дупница.
+                Завършва (1904) Рисувалното училище в София.</p><br>
+            <p> &nbsp;Дълги години учителства в Дупница.</p><br>
+            <p> &nbsp;Работи в областта на пейзажа, портрета, натюрмота, фигуралната композиция. Излага свои творби на редица ОХИ.</p><br>
+
+            <p> &nbsp; По-известни произведения: "Селска закуска" (1937), "Натюрмот" (1949), "В полите на Рила" (1952), "Натюрмот" (1953), "Кория край с. Крън, Казанлъшко" (1953) и др.
+            </p>
+
+        </div>
+
+        <div class="list clearfix">
+            <ol>
+
+                <li><img class="list" src="images/01_Mayka-mi-1921-751x1024.jpg" alt=" "></li><br>
+                <li><img class="list" src="images/03_Naturmort-1937-1024x667.jpg" alt=" "> </li><br>
+                <li><img class="list" src="images/04_naturmort__zelenchuk-1944.-1024x753.jpg" alt=" "> </li><br>
+                <li> <img class="list" src="images/%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%BA%D0%B8-1.jpg" alt=" "> </li><br>
+            </ol>
+
+        </div>
+        <div class="close clearfix" id="tribute-info">
+            <h3>Допълнителна информация:</h3> <br>
+            <p> На страницата на<a href="http://artgallerystz.com/" target="_blank" id="tribute-link"> Художествената галерия на Стара Загора</a> има изчерпателно поднесен материал за <a href="http://artgallerystz.com/%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D1%81%D0%B0%D0%BD%D0%B4%D0%B5%D0%B2-1882-1959-%D0%B3/" target="_blank">Патрики Сандев.</a></p>
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body></html>

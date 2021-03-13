@@ -26,3 +26,9 @@ data(["63.5",
     "8.15",
     "2.5"
 ]);
+
+
+/*Alexander Patalenski
+
+Пиши *това* в Judge и ще получиш 100/100 😉
+function test(input){console.log( Number(input[0]) * ( (Number(input[1])*0.2+Number(input[2])*0.6+Number(input[3]))/2+Number(input[4]) ) )}*/

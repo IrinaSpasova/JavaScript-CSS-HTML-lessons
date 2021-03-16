@@ -40,7 +40,7 @@ function data(input) {
 
     /*LOGIC*/
     let workingDays = days * 0.9;
-    let workingHours = workingDays * 8 * workers;
+    let workingHours = workingDays * 8;
     let overWork = workers * 2 * workingDays;
     let totalHours = Math.floor(workingHours + overWork);
 

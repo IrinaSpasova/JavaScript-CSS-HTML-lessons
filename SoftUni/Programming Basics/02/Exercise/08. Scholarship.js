@@ -82,3 +82,30 @@ function data(input) {
     "5.60",
     "400"
 ])  (това са === стипендии)
+
+
+
+/******************************************************************************************/
+/*            Елегантно решение на колежка                                                */
+/******************************************************************************************/
+
+function scholarship(input){
+    let income = Number(input[0]);
+    let averageGrade = Number(input[1]);
+    let minWage = Number(input[2]);
+    let socialScolarship = 0;
+    let gradeScholarship = 0;
+    if (income < minWage && averageGrade > 4.50){
+    socialScolarship = Math.floor(0.35 * minWage);
+    }
+    if(averageGrade >= 5.5){
+    gradeScholarship = Math.floor(averageGrade * 25);
+    }
+    if (socialScolarship > gradeScholarship){
+    console.log(`You get a Social scholarship ${socialScolarship} BGN`);
+    } else if (gradeScholarship >= socialScolarship && gradeScholarship != 0){
+    console.log(`You get a scholarship for excellent results ${gradeScholarship} BGN`);
+    } else{
+    console.log(`You cannot get a scholarship!`);
+    }
+    }

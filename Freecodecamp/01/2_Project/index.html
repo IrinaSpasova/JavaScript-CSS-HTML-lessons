@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Survey Form
+    </title>
+
+</head>
+
+
+<body>
+
+
+    <main class="information">
+        <div class="text-formating">
+            <h1 id="title">SURVEY FORM</h1><br>
+            <h2> Упражнение</h2><br>
+            <p id="description">Форма за име и имейл</p>
+        </div>
+
+
+        <div class="whole-form">
+
+
+            <form action="" id="survey-form">
+                <div class="survey-form">
+                    <label id="name-label" style="color:#fff;" for="name">Your name:&nbsp;&nbsp;</label>
+                    <input type="name" placeholder="&nbsp;&nbsp;&nbsp;enter name" id="name" required><br>
+                    <label id="email-label" style="color:#fff;" for="email">Your email:&nbsp;&nbsp;</label>
+                    <input type="email" placeholder="&nbsp;&nbsp;&nbsp;enter email" id="email" required><br>
+                    <label id="number-label" style="color:#fff;" for="number">Your age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" placeholder="&nbsp;&nbsp;&nbsp;age" min="18" max="100" id="number" required>
+
+                </div>
+
+                <div class="radio-btn">
+
+                    <p> 1. Вие сте:</p>
+
+                    <label for="student"><input id="indoor" type="radio" name="student-worker" value="student" checked> Студент&nbsp;</label>
+                    <label for="workers"><input id="outdoor" type="radio" name="student-worker" value="worker"> Работещ</label>
+                    <!--value="нещо" дава информация коя опция конкретно е избрана, а не дали някоя опция е избрана -->
+
+                </div>
+
+                <div class="checkbox">
+                    <!-- пре-чекването в начкоя кутийка се получава с поставяне на checked в inpit ! Трябва да има име и дефиниция на името-->
+                    <p>2. По характер сте:</p>
+                    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+                    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
+
+                </div>
+
+                <div class="dropdown">
+                    <p> 3. От къде научихте за нас?</p>
+
+
+                    <!--<a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>-->
+
+                    <label class="dropdown-form" for="dropdown-form">Options:</label>
+                    <select id="dropdown" name="source">
+                        <option value="Google">Google</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Colleagues">Colleagues</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="text">
+
+                    <p>4. Желаете ли да споделите нещо?
+                    </p>
+
+                    <label> </label>
+                    <textarea id="myTextArea" rows="3" cols="80">Your text here</textarea>
+
+
+                    <!-- Друг вариант:
+ <label for="story">Tell us your story:</label>
+<textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>-->
+
+
+                </div>
+
+                <button type="submit" id="submit">Submit</button>
+
+            </form>
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body></html>

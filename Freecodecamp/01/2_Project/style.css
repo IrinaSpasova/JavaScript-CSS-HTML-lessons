@@ -1,0 +1,118 @@
+/*/* Rectangle 9 *
+
+position: absolute;
+width: 270px;
+height: 339px;
+
+background: conic-gradient(from 180deg at 50% 50%, #E8EC1B 0deg, rgba(255, 255, 255, 0) 91.88deg, #E8EC1B 360deg), linear-gradient(180deg, #F01B1B 0%, rgba(255, 255, 255, 0) 100%), conic-gradient(from 180deg at 50% 50%, #1F1BF5 0deg, rgba(196, 196, 196, 0) 360deg);*/
+
+
+/******************************************************/
+/*                   Main part                        */
+/******************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: conic-gradient(from 180deg at 50% 50%, #E8EC1B 0deg, rgba(255, 255, 255, 0) 91.88deg, #E8EC1B 360deg), linear-gradient(180deg, #F01B1B 0%, rgba(255, 255, 255, 0) 100%), conic-gradient(from 180deg at 50% 50%, #1F1BF5 0deg, rgba(196, 196, 196, 0) 360deg);
+    height: 100vh;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lobster";
+    letter-spacing: 0.2em;
+}
+
+p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+/******************************************************/
+/*                   Form part                        */
+/******************************************************/
+.information {
+    background: #fff;
+    max-width: 1000px;
+    text-align: center;
+    padding-top: 20px;
+    align-content: center;
+    margin: auto;
+    justify-items: center;
+    border-radius: 20px;
+    height: 100vh;
+}
+
+
+.survey-form {
+    background: conic-gradient(from 180deg at 50% 50%, #E8EC1B 0deg, rgba(255, 255, 255, 0) 91.88deg, #E8EC1B 360deg), linear-gradient(180deg, #F01B1B 0%, rgba(255, 255, 255, 0) 100%), conic-gradient(from 180deg at 50% 50%, #1F1BF5 0deg, rgba(196, 196, 196, 0) 360deg);
+    border-radius: 20px;
+    margin: 50px 150px 0 150px;
+}
+
+
+input {
+    margin: 20px 5px 0px 0;
+    padding: 25px 10px 25px 0;
+    border-radius: 20px;
+    text-indent: 15px;
+    /* мести курсора навътре в полето */
+
+}
+
+/******************************************************/
+/*                 Radio button part                  */
+/******************************************************/
+
+.radio-btn {
+    margin-top: 30px;
+    align-items: center;
+}
+
+/******************************************************/
+/*                 Ceckbox part                       */
+/******************************************************/
+
+.checkbox {
+    margin-top: 50px;
+}
+
+/******************************************************/
+/*                 Dropdown part                      */
+/******************************************************/
+.dropdown {
+    margin-top: 30px;
+}
+
+#dropdown {
+    background-color: black;
+    color: azure;
+    margin-top: 10px;
+}
+
+/******************************************************/
+/*                 Text part                      */
+/******************************************************/
+.text {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#myTextArea {
+    margin-top: 10px;
+}
+
+/******************************************************/
+/*                 Submit part                      */
+/******************************************************/
+#submit {
+    margin-top: 30px;
+}

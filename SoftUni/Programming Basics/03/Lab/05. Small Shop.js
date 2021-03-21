@@ -1,3 +1,7 @@
+/*********************************/
+           /* 1 */
+/*********************************/
+
 function data(input) {
     let product = input[0].toLowerCase();
     let town = input[1].toLowerCase();
@@ -49,6 +53,90 @@ function data(input) {
 
 }
 
+/*******************************************/
+              /* 2 */
+/*******************************************/
+function data(input) {
+    let product = input[0];
+    let town = input[1];
+    let count = Number(input[2]);
+   let result = 0;
+
+    /*LOGIC*/
+    switch (town) {
+        case "Sofia":
+            switch (product) {
+                case "coffee":
+                    result = count * 0.5;
+                    break;
+                case "water":
+                    result = count * 0.8;
+                    break;
+                case "beer":
+                    result = count * 1.2;
+                    break;
+                case "sweets":
+                    result = count * 1.45;
+                    break;
+                case "peanuts":
+                    result = count * 1.6;
+                    break;
+                    
+            }
+            break;
+            case "Plovdiv":
+                switch (product) {
+                    case "coffee":
+                        result = count * 0.4;
+                        break;
+                    case "water":
+                        result = count * 0.7;
+                        break;
+                    case "beer":
+                        result = count * 1.15;
+                        break;
+                    case "sweets":
+                        result = count * 1.3;
+                        break;
+                    case "peanuts":
+                        result = count * 1.5;
+                        break;
+                        
+                }
+                break;
+                case "Varna":
+                    switch (product) {
+                        case "coffee":
+                            result = count * 0.45;
+                            break;
+                        case "water":
+                            result = count * 0.7;
+                            break;
+                        case "beer":
+                            result = count * 1.1;
+                            break;
+                        case "sweets":
+                            result = count * 1.35;
+                            break;
+                        case "peanuts":
+                            result = count * 1.55;
+                            break;
+                    }
+                    break;
+
+
+    }
+console.log(result);
+}
+
+
+
+
+
+
+/****************************************/
+        /* 3 */
+/****************************************/
 
 
 /*function data(input) {

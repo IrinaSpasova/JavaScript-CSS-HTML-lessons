@@ -21,7 +21,7 @@ function data(input) {
             let card1new = Number(input[counter]);
             let card2new = Number(input[counter + 1]);
             if (card1new > card2new) {
-               ;
+               
                 console.log("Number wars!");
                 console.log(`${name1} is winner with ${points1} points`);
                 return;

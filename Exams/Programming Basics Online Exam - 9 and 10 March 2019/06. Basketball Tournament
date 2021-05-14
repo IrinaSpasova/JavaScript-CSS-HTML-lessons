@@ -1,0 +1,36 @@
+function data(input){
+let counterGamesWin = 0;
+let counterGamesLost = 0;
+let counter=0;
+
+
+while(input[counter] !="End of tournaments"){
+
+let nameOfTheTournament = input[counter];
+let counterMatches = Number(input[counter+1]);
+let counterGames = 0;
+for (let i = 1; i<=counterMatches;i++){
+    let our = Number(input[counter+2]);
+    let other = Number(input[counter+3]);
+    
+    if (our>other){
+        counterGamesWin++;
+        counterGames++;
+console.log(`Game ${counterGames} of tournament ${nameOfTheTournament}: win with ${our-other} points.`);
+    }else {
+        counterGamesLost++;
+        counterGames++;
+        console.log(`Game ${counterGames} of tournament ${nameOfTheTournament}: lost with ${other-our} points.`);
+    }
+
+    counter+=2;
+}
+counter+=2;
+
+}
+
+console.log(`${((counterGamesWin/(counterGamesWin+counterGamesLost))*100).toFixed(2)}% matches win`);
+console.log(`${((counterGamesLost/(counterGamesWin+counterGamesLost))*100).toFixed(2)}% matches lost`);
+
+}
+data(["Dunkers",2,75,65,56,73,"Fire Girls",3,67,34,83,98,66,45,"End of tournaments"]);

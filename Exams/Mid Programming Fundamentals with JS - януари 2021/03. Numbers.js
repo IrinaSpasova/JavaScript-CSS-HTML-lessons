@@ -51,4 +51,18 @@ console.log(
     ? `No`
     
     : firstFive.join(" "));
-}*/
+}
+
+
+
+function solve(input) {
+    let arr = input.split(' ').map(Number);
+    let average = arr.reduce((a, b) => a + b, 0) / arr.length;
+    let sorted = arr.filter(x => x > average).sort((a, b) => b - a).slice(0, 5);
+    return sorted.length > 0 ? sorted.join(' ') : 'No';
+}
+
+
+
+
+*/

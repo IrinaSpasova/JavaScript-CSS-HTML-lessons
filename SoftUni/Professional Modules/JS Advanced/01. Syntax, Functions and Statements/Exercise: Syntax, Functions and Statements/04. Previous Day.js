@@ -10,6 +10,8 @@ function data(year, month, day) {
     }
     if ((leapYear(year)===true) && month1 == 2 && date1 == 30) {
         date1 = 29;
+    }else{
+        date1=28;
     }
 
     function leapYear(years) {

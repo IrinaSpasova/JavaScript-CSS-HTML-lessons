@@ -22,3 +22,11 @@ console.log(sum);
 }
 
 data(1234);
+
+
+// or
+
+//let counter = true;
+//if (firstChar != num[i]){
+ //   counter= false;
+//}

@@ -28,7 +28,15 @@ function data(year, month, day) {
         return result;
     }
     console.log(`${year1}-${month1}-${date1}`);
-
+// оr
+    /*function leapYear(years){
+    if (input)
+    if ( input % 4 === 0 && input % 100 !==0 || input % 400 ===0){
+       return true;
+    }else{
+       return false;
+    }
+}*/
 
 
 }
@@ -67,3 +75,6 @@ let b=newFunction();
 console.log(`${year1}-${month1+1}-${date1}`);
 
 }*/
+
+
+

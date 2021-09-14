@@ -39,7 +39,19 @@ function data(year, month, day) {
 }*/
 
     
-    /* and we may use maont-1...*/
+    /* and we may use monht-1...
+    
+    
+    or
+    
+    function getPreviousDay(year, month, day) {
+    let today = new Date(year, month - 1, day);
+    let yesterday = new Date(today);
+ 
+    yesterday.setDate(yesterday.getDate() - 1)
+ 
+    console.log(`${yesterday.getFullYear()}-${yesterday.getMonth() + 1}-${yesterday.getDate()}`)
+}*/
 
 }
 data(2020, 3, 1)

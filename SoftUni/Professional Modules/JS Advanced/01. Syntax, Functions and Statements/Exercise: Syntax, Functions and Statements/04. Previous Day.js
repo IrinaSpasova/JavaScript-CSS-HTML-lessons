@@ -8,9 +8,9 @@ function data(year, month, day) {
     if ((month1 == 0 || month1 == 2 || month1 == 4 || month1 == 6 || month1 == 7 || month1 == 9 || month1 == 11) && date1 == 31) {
         date1 = 30;
     }
-    if ((leapYear(year)===true) && month1 == 2 && date1 == 30) {
+    if (((leapYear(year)===true) && month1 == 2 && date1 == 30)||((leapYear(year)===true) && month1 == 0 && date1 == 30)) {
         date1 = 29;
-    }else if ((leapYear(year)===false) && month1 == 2 && date1 == 30){
+    }else if (((leapYear(year)===false) && month1 == 2 && date1 == 30)||((leapYear(year)===false) && month1 == 0 && date1 == 30)){
         date1=28;
     }
 

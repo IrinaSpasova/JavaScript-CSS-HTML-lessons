@@ -39,7 +39,7 @@ function data(year, month, day) {
 }*/
 
     
-    /* and we may use monht-1...
+    /* and we may use month-1...
     
     
     or

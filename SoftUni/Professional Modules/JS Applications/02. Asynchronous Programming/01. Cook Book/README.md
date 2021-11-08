@@ -1,0 +1,1 @@
+Write a JS program that loads all recipies from the provided local server. You are provided with skeleton (HTML & CSS) for this task, also with server, which you will use as localhost. You will be able to load from the server "database" the needed recipies and other details.

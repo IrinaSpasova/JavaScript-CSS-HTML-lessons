@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 and 02</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h2{
+            margin-left: 30px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        input[type=submit] {
+            margin-left: 34px;
+            width: 50px;
+            margin-top: 5px;
+            border-radius: 4px;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 36%, rgba(226,225,221,1) 100%);
+            border-color: rgb(52, 99, 175);
+        }
+
+        table.first {
+            margin-left: 20px;
+            border-collapse: collapse;
+            border-top: 1.5px solid black;
+            border-left: 1.5px solid black;
+            border-right: 1.3px solid black;
+            border-bottom: 1px solid #c1bbbb;
+            width: 600px;
+            height: 50px;
+        }
+
+        table.inner.outer{
+            margin: 1px;
+            width: 580px;
+            border-collapse: collapse;
+            border-top: 1px solid black;
+            border-left: 2px solid #949191;
+            border-right: 1px solid #b0adad;
+            border-bottom: 1px solid #c1bbbb;           
+        }
+
+        table.inner .inner{
+            margin: 1px;
+            margin-left: 0;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        tr {
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        td:first-child,
+        td:last-child {
+            width: 10px;
+        }
+
+        td.innerTd{
+            width: 160px;
+        }
+
+        tr:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <caption><h2>Login</h2></caption>
+        <label for="fname">Username:</label>
+        <input type="text"><br>
+        <label for="lname" style="letter-spacing: 0.3px;">Password:</label>
+        <input type="text" style="margin-top:5px"> <br>
+        <input type="submit" value="Login">
+    </form>
+
+
+    <!-- TABLE -->
+   
+    <table class="first">
+        <h2 style="margin-top: 100px">Table</h2>
+        <tr>
+            <td>1</td>
+            <td colspan="3" style="padding-left: 2px;">2</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">4</td>
+            <td colspan="3" rowspan="3">
+                <!-- First inner table-->
+                <table class="inner outer">
+                    <tr style="height: 40px;">
+                        <td rowspan="2" colspan="2">
+
+                            <!-- Second inner table-->
+                            <table class="inner inner" width="480px"> 
+                                <tr style="border-bottom: 1px solid #c1bbbb;">
+                                    <td style="border-right: none;" class="innerTd">1</td>
+                                    <td rowspan="2" style="border-right: 1px solid #837e7e; border-left: 1px solid black;">1</td>
+                                    <td style="border-right: none;" class="innerTd">1</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td style="border-right: none;" class="innerTd">2</td>
+                                   
+                                    <td style="border-right: none;" class="innerTd">1</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <td rowspan="2">1</td>
+                    </tr>
+                
+                    <tr> </tr>
+                
+                    <tr style="border-top: none">
+                        <td  colspan="2" >1</td>
+                        <td style="width: 100px;">1</td>
+                    </tr>    
+                </table>
+            </td>           
+            <td>1</td>
+          
+        </tr>
+
+        <tr></tr>   
+        <tr> </tr>
+
+        <tr>
+            <td>1</td>
+            <td colspan="3" style="color: #706c6c;">1</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td colspan="3" style="color: #706c6c;">1</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+
+
+
+
+
+    
+
+</body>
+
+</html>
+

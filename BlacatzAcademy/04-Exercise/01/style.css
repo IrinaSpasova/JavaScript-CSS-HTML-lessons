@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ADD8E6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.box, .container {
+    height: 95vh;
+    width: 30vw;
+    margin: 10px auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.box-header {
+    background-color: #1B2632;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+}
+
+.box-header-left {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.box-header-left img {
+    width: 70px;
+}
+
+.box-header-right {
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.box-header-right .username {
+    color: white;
+    font-size: 24px;
+}
+
+.box-header-right .status {
+    color: #9CDC41;
+    font-weight: 600;
+}
+
+.box-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-body .they {
+    display: flex;
+    padding-top: 10px;
+
+}
+
+.box-body .they .they-left img {
+    width: 70px;
+    padding-left: 10px;
+}
+
+.box-body .they .they-right .they-msg {
+    background-color: #010D1B;
+    border-radius: 18px;
+    min-width: 90%;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    font-size: 18px;
+    color: #B8BBBB;
+}
+
+.box-body .they .they-right .time {
+    margin-left: 30px;
+    padding-top: 5px;
+    color: #888282;
+}
+
+.box-body .us .us-msg {
+    width: 64%;
+    margin-left: 11vw;
+    background-color: #15C27D;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.box-footer{
+    background-color: #010D1B;
+    width: 100%;
+}

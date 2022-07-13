@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li>Начало</li>
+                <li>Блог</li>
+                <li>За нас</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="hero">
+            <h1>Това е заглавие</h1>
+            <p>Това е текст под заглавието</p>
+        </section>
+
+        <section class="subscribe">
+            <div class="text">
+                <h2>
+                    Абонирай се за бюлетин
+                </h2>
+            </div>
+
+
+            <div class="form">
+                <form>
+                    <input type="text" name="email" id="email" value="Въведи имейла си"
+                        onfocus="if(this.value==this.defaultValue){this.value='';}" placeholder="Въведи имейла си">
+                    <input type="submit" value="АБОНИРАНЕ">
+                </form>
+            </div>
+        </section>
+
+        <section class="images">
+            <div class="left-img">
+                <img src="https://images.unsplash.com/photo-1474557157379-8aa74a6ef541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </div>
+            <div class="right-img">
+                <img src="https://images.unsplash.com/photo-1532009877282-3340270e0529?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+                    alt="">
+            </div>
+        </section>
+
+        <section class="gallery">
+            
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1619441207978-3d326c46e2c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                        alt="">
+                    <div class="text">
+                        <h3>Мотивация всеки ден</h3>
+                        <p>Ние можем да се мотивираме, като правим това, което обичаме!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="">
+                    <div class="text">
+                        <h3>Мотивация всеки ден</h3>
+                        <p>Ние можем да се мотивираме, като правим това, което обичаме!</p>
+                    </div>
+                </div>
+
+           
+        </section>
+
+        <section class="end">
+            <button>
+                <h2>ЗАРЕДИ ОЩЕ</h2>
+            </button>
+        </section>
+
+    </main>
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

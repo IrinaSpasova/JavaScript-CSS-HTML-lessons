@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+.form {
+    width: 360px;
+    height: 410px;
+    margin: 5% auto;
+    box-shadow: 3px 3px 15px 0px #414141;
+    padding: 12px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label,
+.text {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+input {
+    outline: none;
+    border-color: rgb(182, 184, 184);
+}
+
+input[type=text],
+.checkboxes,
+.radio,
+.age {
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-top: 30px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #7f7d7d;
+}
+
+input[type=text] {
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+    border: 2px solid #beb6b6;
+    border-radius: 4px;
+    color: #8e8888;
+    font-size: 18px;
+}
+
+.radio,
+.checkboxes,
+.checkbox {
+    display: flex;
+}
+
+.checkboxes {
+    width: 340px;
+}
+
+.checkbox {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 70px;
+}
+
+.checkbox:last-child {
+    white-space: nowrap;
+    width: 52px;
+}
+
+#gdpr {
+    margin-left: 10px;
+}
+
+#rules {
+    margin-left: 30px;
+}
+
+.options {
+    display: flex;
+    width: 150px
+}
+
